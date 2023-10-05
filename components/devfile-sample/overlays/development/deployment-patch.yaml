@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/ekim-tenant/devfile-sample/devfile-sample@sha256:41058dcbdfebbe2989e41253a8ce85104011e54ac6689b83d73fdaf488b3e996
+        name: my-nodejs
+        resources: {}
+status: {}
